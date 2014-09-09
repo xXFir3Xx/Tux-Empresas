@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/base.css">
+	<script src="js/jquery.min.js"></script>
 </head>
 <body>
     <div id="wrap"> <!-- envolvente general de nuestra página --> 
@@ -20,14 +21,14 @@
     	           		<li class="tab ">
 	                    	<a href="quienes.html" title="cursos">¿Quienes Somos?</a>
     	            	</li>
-        	        	<li class="tab ">
-            	        	<a href="/horarios" title="Horarios">Login</a>
+        	        	<li  class="tab ">
+            	        	<a  id="login" href="#" title="Login">Login</a>
                 		</li>
             		</ul> 
        			</nav>
     			</div>
 			</header>
-			<div class="login">
+			<div id="login-form" class="login">
 				<div class="container">
 					<form method="post" action="">
       					<p>
@@ -64,13 +65,39 @@
 					</div>
 				</div>
 			</div>
-			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur praesentium voluptatum reiciendis provident laborum magni atque hic, beatae iure dicta nisi vel, eaque quia quaerat quasi alias quis. Aperiam, magnam.</p>
-			</div>
-		</div> 
+				<div id="contenedor">
+    				<input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+    				<label for="tab-1" class="tab-label-1">Información</label>
+    
+    				<input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+    				<label for="tab-2" class="tab-label-2">Contacto</label>
+    
+    				<input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+    				<label for="tab-3" class="tab-label-3">Anuncios</label>
+    
+    				<input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+    				<label for="tab-4" class="tab-label-4">Configuración</label>
+                            
+    				<div class="content">
+				        <div class="content-1">
+				            Información
+				        </div>
+				        <div class="content-2">
+				            Contacto
+				        </div>
+				        <div class="content-3">
+				            Anuncios
+				        </div>
+				        <div class="content-4">
+				            Configuración
+				        </div>
+    				</div>
+				</div>
+			</div> 
     </div> 
     <div id="footer"> 
     	<img src="img/logo.png" alt="Tux-Anuncios">
 	</div>
+	<script language="javascript" type="text/javascript" src="js/base.js"></script>
 </body>
 </html>

@@ -379,7 +379,7 @@ html, body
 			&.facebook
 				background azul1
 				border 4px solid blanco
-				transition all 0.5s ease
+				transition all 0.3s ease
 				a
 					color blanco
 					text-decoration none
@@ -389,12 +389,13 @@ html, body
 						font-size 2em
 						content "\e630"
 				&:hover
-					background azul
-					padding 5px
+					background rgba(azul, 0.5)
+					border 2px solid blanco
 
 			&.twitter
 				background azul
 				border 4px solid blanco
+				transition all 0.3s ease
 				a
 					color blanco
 					text-decoration none
@@ -403,9 +404,14 @@ html, body
 						line-height 2em
 						font-size 2em
 						content "\e634"
+				&:hover
+					background rgba(azul,0.5)
+					border 2px solid blanco
+
 			&.youtube
 				background rojo1
 				border 4px solid blanco
+				transition all 0.3s ease
 				a
 					color blanco
 					text-decoration none
@@ -415,9 +421,13 @@ html, body
 						font-size 2em
 						line-height 2em
 						content "\e63a"
+				&:hover
+					background rgba(rojo ,0.5)
+					border 2px solid blanco
 			&.plus
 				background amarillo1
 				border 4px solid blanco
+				transition all 0.3s ease
 				a
 					color blanco
 					text-decoration none
@@ -426,6 +436,9 @@ html, body
 						line-height 2em
 						font-size 2em
 						content "\e62b"
+				&:hover
+					background rgba(amarillo,0.5)
+					border 2px solid blanco
 
 #footer
 	position relative
@@ -439,3 +452,58 @@ html, body
 		margin 0
 		padding 10px
 		height 50px
+#contenedor 
+	width 100%  
+	box-sizing border-box
+	text-align center
+	label
+		float left
+		background rojo
+		cursor pointer
+		line-height 60px
+		height 60px
+		padding 0 20px
+		display block
+		color blanco  /* Color del texto de las pestañas */
+		text-align center
+		&:hover
+			background rojo1
+			color blanco
+	input
+		height 50px
+		visibility hidden
+		&:hover
+			background rojo1
+			color blanco
+	
+
+// #contenedor input:hover + label
+// 	background rojo1 
+// 	color blanco  
+
+#contenedor input:checked + label
+	background naranja  /* Fondo de las pestañas al presionar */
+	position relative
+.content
+	color rojo
+	background blanco  /* Fondo del contenido */
+	position relative
+	width 100%
+	height 350px  /* Alto del contenido */
+	padding 30px
+	z-index 5
+	border-radius 0 5px 5px 5px
+
+.content div
+	position absolute
+	z-index -10
+	opacity 0
+	transition all linear 0.1s
+
+
+#contenedor input.tab-selector-1:checked ~ .content .content-1,
+#contenedor input.tab-selector-2:checked ~ .content .content-2,
+#contenedor input.tab-selector-3:checked ~ .content .content-3,
+#contenedor input.tab-selector-4:checked ~ .content .content-4 
+	z-index 10
+	opacity 1
