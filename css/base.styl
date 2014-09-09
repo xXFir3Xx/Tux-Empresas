@@ -1,0 +1,441 @@
+@font-face 
+	font-family: 'iconos';
+	src:url('../fonts/icomoon.eot?7nwjnf');
+	src:url('../fonts/icomoon.eot?#iefix7nwjnf') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?7nwjnf') format('woff'),
+		url('../fonts/icomoon.ttf?7nwjnf') format('truetype'),
+		url('../fonts/icomoon.svg?7nwjnf#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+gris-c = #ECF0F1
+gris-c1 = #BDC3C7
+gris = #34495E
+gris1 = #2C3E50
+azul = #3498db
+azul1 = #2980b9
+blanco = #fff
+verde = #2ecc71
+verde1 = #27ae60
+morado = #9b59b6
+morado1 = #8e44ad
+naranja = #e67e22
+naranja1 = #d35400
+amarillo = #f1c40f
+amarillo1 = #f39c12
+rojo = #e74c3c
+rojo1 = #c0392b
+
+html, body 
+	height 100% 
+	font-family Arial
+	font-size 16px
+.anuncios
+	background morado1
+	max-width 50%
+	display inline-block
+	overflow hidden
+	padding 10px
+	.anuncio
+		background rojo1
+		max-width 100%
+		position relative
+		padding 0
+		
+
+		.anuncio-img
+			width 30%
+			display inline-block
+			text-align center
+			img
+				padding 0
+				max-width 100%
+
+		.anuncio-contenido
+			width 60%
+			display inline-block
+			text-align center
+			padding 0
+			h3
+				font-size 1em
+				padding 0
+		.anuncio-ir
+			padding 0
+			width 10%
+			height 100%
+			background amarillo1
+			display inline-block
+			position absolute
+			top 0
+			right 0
+			a
+				 color blanco
+				 position absolute
+				 top 35%
+				 font-size 1.5em
+				 padding 5px
+				 text-decoration none
+
+				 &:before
+						font-family iconos
+						font-size 1.5em
+						content "\e625"
+				
+		
+		
+.btn
+	border-width medium medium 5px
+	border-style none none solid
+	border-image none
+	border-radius 5px
+	color #FFF
+	cursor pointer
+	display inline-block
+	transform scale(1, 1)
+	transform-origin left center 0px
+	font-size 14px
+	font-weight 600
+	padding 10px 20px
+	position relative
+	text-decoration none
+	text-transform uppercase
+	vertical-align top
+	white-space nowrap
+	&.amarillo
+		background none repeat scroll 0% 0% #FFC33E
+		color blanco
+		border-color #B36929
+	&.verde
+		background none repeat scroll 0% 0% verde
+		color blanco
+		border-color verde1
+	&.rojo
+		background none repeat scroll 0% 0% rojo
+		color blanco
+		border-color rojo1
+.buscador
+	background-image url('../img/tux1.jpg')
+	color azul
+	height 500px
+	position relative
+	text-align center
+	.buscar 
+		input
+			border-radius 8px
+			font-size 1.5em
+			padding 0.5em
+			text-align center
+.banner1
+	background morado1
+	color blanco
+	height 150px
+	text-align center
+	p 
+		margin 0
+		padding 30px
+		font-size 2em
+.cat-an
+	background verde1
+.categorias
+	max-width 50%
+	background amarillo
+	margin 0
+	display inline-block
+	ul
+		margin 0
+		overflow hidden
+		li 
+			font-size 1em
+			a
+				color blanco
+				font-weight bold
+				text-decoration none
+				&:hover
+					background rojo
+					border-radius 4px
+					color blanco
+				&:visited
+					text-decoration none
+				&:link
+					text-decoration none
+
+
+.container
+	max-width 1000px
+	margin 0px auto
+.empresas-destacadas
+	max-width 100%
+	text-align center
+	padding 10px 0 10px 0
+.empresas
+	width 25%
+	padding 0.5em
+	display inline-block
+	.empresa
+		
+		border-radius 5px 5px 0 0
+		background white
+		box-shadow 2px 2px 10px rgba(black,0.3)
+		.empresa-cabecera
+			border-radius 5px 5px 0 0
+			background verde1
+			text-align center
+			padding 0.5em 0
+			img
+				width 70px
+				border-radius 50%
+				border 4px solid rgba(white,0.3)
+			h3
+				color white
+				margin 0
+		.menu-empresa
+			background verde1
+			.caja
+				color white
+				font-size 0.8em
+				width 33.3%
+				display inline-block
+				text-align center
+				&.visitas
+					background naranja1
+					padding-top 1em
+					&:before
+						font-family iconos
+						font-size 1.5em
+						content "\e610"
+						
+				&.favoritos
+					background amarillo1
+					padding-top 1em
+					&:before
+						font-family iconos
+						font-size 1.5em
+						content "\e611"
+						
+				&.anuncios1 
+					background azul
+					padding-top 1em
+					&:before
+						font-family iconos
+						font-size 1.5em
+						content "\e602"
+		.descripcion-empresa
+			color gris-f
+			padding 0.5em
+			text-align justify
+		.accion-empresa
+			text-align center
+			padding 1em
+.header
+	background none repeat scroll 0% 0% gris
+	margin 0px auto
+	color blanco
+	.logo
+		float left
+		height inherit
+		line-height 55px
+		position relative
+		z-index 7
+		img
+			padding 10px
+	.container
+		height 55px
+		position relative
+		background inherit
+		padding 0px 10px
+.menu
+	margin 0px auto
+	position absolute
+	top 0px
+	left 0px
+	right 0px
+	z-index 6
+	height inherit
+	.lista
+		font-size 0px
+		padding 0px
+		text-align right
+		.tab
+			display inline-block
+			transform scale(1, 1)
+			transform-origin left center 0px
+			font-size 14px
+			font-weight 600
+			height 55px
+			text-align center
+			text-transform uppercase
+			vertical-align top
+			&:hover
+				background none repeat scroll 0% 0% #2c3e50
+			a
+				border-radius 5px 5px 0px 0px
+				color blanco
+				display block
+				height 50px
+				line-height 50px
+				margin-top 5px
+				padding 0px 20px
+				text-decoration none
+				text-align center
+				transition #000 0.2s ease 0s
+#wrap
+	min-height 100%
+#main
+	overflow auto
+	padding-bottom 50px
+
+.login
+	background gris1
+	padding 10px
+	display none
+	form
+		color blanco
+		font-weight bold
+	p 
+		display inline-block
+		margin 10px
+		padding 0 20px 0 20px
+		input
+			font-size 14px
+			border-radius 4px
+			padding 5px
+	label
+		display inline-block
+		margin 10px
+		padding 0 20px 0 20px
+
+.titulos
+	font-family 'Oswald', sans-serif
+	font-size 24px
+	color rojo
+	text-shadow: 3px 0px 2px rgba(150, 150, 150, 0.88);
+
+.quien
+	background gris-c
+	color gris-c1
+	
+	#logo2
+		
+		display inline-block
+		
+	#tux-empresas
+		width 50%
+		display inline-block
+		padding 10px
+		vertical-align top
+		h3
+			color gris
+			font-family Oswald, sans-serif
+			font-size 24px
+			margin 0
+			padding 10px 0 10px 0
+		p 
+			font-size 18px
+			text-align justify
+			margin 0
+			padding 0
+	
+.servicios
+	background naranja
+	color blanco
+	font-size 24px
+	text-align justify
+	h3
+		margin 0
+		padding 10px 0 10px 0
+	p
+		margin 0
+		padding 10px 0 30px 0	
+
+.perfil-empresa
+	background-image url('../img/tux1.jpg')
+	color azul
+	height 500px
+	padding 20px 0 
+	text-align center
+	h2
+		font-size 48px
+		font-family Oswald, sans-serif
+		color blanco	
+		margin 20px
+	
+	img
+		border-radius 50%
+		border 20px solid rgba(255,255,255, 0.2)
+		height 250px
+		width 250px
+
+	.perfil-redes
+		height 100px
+		text-align center
+		margin-bottom 20px
+
+		.social-circle
+			display inline-block
+			background azul
+			border-radius 50%
+			width 70px
+			height 70px
+			&.facebook
+				background azul1
+				border 4px solid blanco
+				transition all 0.5s ease
+				a
+					color blanco
+					text-decoration none
+					&:before
+						font-family iconos
+						line-height 2em
+						font-size 2em
+						content "\e630"
+				&:hover
+					background azul
+					padding 5px
+
+			&.twitter
+				background azul
+				border 4px solid blanco
+				a
+					color blanco
+					text-decoration none
+					&:before
+						font-family iconos
+						line-height 2em
+						font-size 2em
+						content "\e634"
+			&.youtube
+				background rojo1
+				border 4px solid blanco
+				a
+					color blanco
+					text-decoration none
+
+					&:before
+						font-family iconos
+						font-size 2em
+						line-height 2em
+						content "\e63a"
+			&.plus
+				background amarillo1
+				border 4px solid blanco
+				a
+					color blanco
+					text-decoration none
+					&:before
+						font-family iconos
+						line-height 2em
+						font-size 2em
+						content "\e62b"
+
+#footer
+	position relative
+	margin-top -50px /* altura en px del footer con valor negativo */ 
+	height 100px /* Altura del Footer en px*/ 
+	clear both 
+	background gris
+	text-align center
+	color #FFFFFF
+	img
+		margin 0
+		padding 10px
+		height 50px
